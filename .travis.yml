@@ -15,3 +15,21 @@ before_script:
   - "sh -e /etc/init.d/xvfb start"
 script:
   - "polymer test"
+  - echo "Deploying!" 
+before_deploy:
+  - polymer build  
+deploy:
+  - provider: firebase
+    edge: true
+    skip_cleanup: true
+    project: meetcoders-devsite
+    token: $FIREBASE_TOKEN
+    on:
+      branch: develop
+  - provider: firebase
+    edge: true
+    skip_cleanup: true
+    project: meetcoders-site
+    token: $FIREBASE_TOKEN
+    on:
+      branch: master
