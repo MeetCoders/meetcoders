@@ -1,0 +1,60 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-card/paper-card.html">
+<dom-module id="my-view1">
+<style is="custom-style">
+  paper-card.rate { @apply(--layout-horizontal); }
+  .rate-image {
+    width: 100px;
+    height: 170px;
+    background: url('./donuts.png');
+    background-size: cover;
+  }
+  .rate-content {
+    @apply(--layout-flex);
+    float: left;
+  }
+  .rate-header { @apply(--paper-font-headline); }
+  .rate-name { color: var(--paper-grey-600); margin: 10px 0; }
+  paper-icon-button.rate-icon {
+    --iron-icon-fill-color: white;
+    --iron-icon-stroke-color: var(--paper-grey-600);
+  }
+</style>
+<paper-card class="rate">
+  <div class="rate-content">
+    <div class="card-content">
+      <div class="rate-header">Rate this album</div>
+      <div class="rate-name">Mac Miller</div>
+      <div>Live from space</div>
+    </div>
+    <div class="card-actions">
+      <paper-icon-button class="rate-icon" icon="star"></paper-icon-button>
+      <paper-icon-button class="rate-icon" icon="star"></paper-icon-button>
+      <paper-icon-button class="rate-icon" icon="star"></paper-icon-button>
+      <paper-icon-button class="rate-icon" icon="star"></paper-icon-button>
+      <paper-icon-button class="rate-icon" icon="star"></paper-icon-button>
+    </div>
+  </div>
+  <div class="rate-image"></div>
+</paper-card>
+  <script>
+
+    Polymer({
+
+      is: 'my-view1'
+
+    });
+
+  </script>
+
+</dom-module>
