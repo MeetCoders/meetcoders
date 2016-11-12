@@ -1,7 +1,12 @@
 {
   "name": "My App",
   "short_name": "My App",
-    "icons": [{
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#3f51b5",
+  "theme_color": "#3f51b5",
+  "icons": [
+    {
       "src": "images/app-icon-32.png",
       "type": "image/png",
       "sizes": "32x32"
@@ -21,9 +26,6 @@
       "src": "images/app-icon.svg",
       "sizes": "384x384",
       "type": "image/svg"
-    }],
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#3f51b5",
-  "theme_color": "#3f51b5"
+    }
+  ]
 }
