@@ -4,7 +4,8 @@
     properties:{
       news:{
         type: Array,
-        value:[]
+        value:[],
+        observer: 'hoola'
       },
       sliderImage:{
         type: Array
@@ -14,8 +15,12 @@
         computed: '_imageSize(sliderImage)'
       }
     },
+    hoola: function(){
+      console.log("hola");
+      console.log(this.news)
+      window.pepe = this.$.hola;
+    },
     _imageSize: function(array){
-      console.log(array.length);
       return array.length;
     }
   });

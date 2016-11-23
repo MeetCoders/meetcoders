@@ -18,7 +18,8 @@
     "polymer": "polymer/polymer#^1.4.0",
     "paper-card": "PolymerElements/paper-card#^1.1.4",
     "iron-ajax": "PolymerElements/iron-ajax#^1.4.3",
-    "l2t-paper-slider": "Link2Twenty/l2t-paper-slider#^1.2.0"
+    "l2t-paper-slider": "Link2Twenty/l2t-paper-slider#^1.2.0",
+    "polymerfire": "firebase/polymerfire#^0.10.3"
   },
   "devDependencies": {
     "web-component-tester": "^4.0.0"
